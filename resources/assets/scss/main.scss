@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+}
+
+.squares {
+    width: 300px;
+    display: inline-block;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.square {
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+}
+
+.square:not(.active) button {
+    background-color: #ecf0f1 !important;
+}
+
+.square button {
+    width: 140px;
+    height: 140px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.square button:active {
+    background-color: #bdc3c7 !important;
+}
+
+button:focus,
+button:active {
+    outline: none !important;
+}
